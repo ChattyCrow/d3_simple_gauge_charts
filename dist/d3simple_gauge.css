@@ -8,7 +8,7 @@
     text-anchor: middle; }
   .d3SimpleGauge .secondaryLabels > text {
     text-anchor: middle;
-    fill: '#f9a535'; }
+    fill: #f9a535; }
   .d3SimpleGauge:hover .hideHover {
     visibility: hidden; }
   .d3SimpleGauge:hover .showHover {
