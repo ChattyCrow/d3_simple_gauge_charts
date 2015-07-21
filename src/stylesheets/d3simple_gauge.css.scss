@@ -1,0 +1,30 @@
+.d3SimpleGauge {
+  cursor: pointer;
+
+  .background {
+    fill: transparent;
+  }
+
+  .showHover {
+    visibility: hidden;
+  }
+
+  .primaryLabels > text {
+    text-anchor: middle;
+  }
+
+  .secondaryLabels > text {
+    text-anchor: middle;
+    fill: '#f9a535';
+  }
+
+  &:hover {
+    .hideHover {
+      visibility: hidden;
+    }
+
+    .showHover {
+      visibility: visible;
+    }
+  }
+}
