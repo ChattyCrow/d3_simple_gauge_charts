@@ -3,13 +3,18 @@
   .d3SimpleGauge .background {
     fill: transparent; }
   .d3SimpleGauge .showHover {
-    visibility: hidden; }
+    opacity: 0; }
   .d3SimpleGauge .primaryLabels > text {
     text-anchor: middle; }
   .d3SimpleGauge .secondaryLabels > text {
     text-anchor: middle;
     fill: #f9a535; }
+  .d3SimpleGauge .showHover, .d3SimpleGauge .hideHover {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out; }
   .d3SimpleGauge:hover .hideHover {
-    visibility: hidden; }
+    opacity: 0; }
   .d3SimpleGauge:hover .showHover {
-    visibility: visible; }
+    opacity: 1; }

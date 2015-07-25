@@ -6,7 +6,7 @@
   }
 
   .showHover {
-    visibility: hidden;
+    opacity: 0;
   }
 
   .primaryLabels > text {
@@ -18,13 +18,20 @@
     fill: #f9a535;
   }
 
+  .showHover, .hideHover {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+  }
+
   &:hover {
     .hideHover {
-      visibility: hidden;
+      opacity: 0;
     }
 
     .showHover {
-      visibility: visible;
+      opacity: 1;
     }
   }
 }
