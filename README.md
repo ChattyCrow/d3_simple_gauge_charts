@@ -9,7 +9,7 @@ Examples
 
 ![]
 
-or example on **jsfiddle** https://jsfiddle.net/z4mao901/2/ !
+or example on **jsfiddle** https://jsfiddle.net/z4mao901/4/ !
 
 Usage
 --------------
@@ -45,6 +45,8 @@ $(document).ready(function() {
     });
 });
 ```
+
+Charts are drawed via SVG, you can modify some effects via CSS like smooth hover opacity change.
 
 ### Attributes
 
